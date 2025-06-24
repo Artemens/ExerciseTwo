@@ -1,0 +1,149 @@
+ 
+<div class="final-form-with-white-bg"> 
+  <div class="form-header-block"> 
+    <div class="title-wrapper"> 
+      <h1 class="form-main-title"><font face="Times New Roman">Связаться</font></h1>
+     
+      <p class="form-subtitle">Наши сотрудники помогут выполнить подбор услуги и расчет цены с учетом ваших требований</p>
+     </div>
+   </div>
+ 
+  <div class="form-body-container"> 
+    <div class="form-inputs-column"> 
+      <div class="input-row"> 
+        <div class="input-field"> <label>Ваше имя*</label> <?=$FORM->ShowInput('Names')?></div>
+       
+        <div class="input-field"><label>Компания/Должность*</label> <?=$FORM->ShowInput('Company')?> </div>
+       </div>
+     
+      <div class="input-row"> 
+        <div class="input-field"> <label>Email*</label> <?=$FORM->ShowInput('Email')?> </div>
+       
+        <div class="input-field"> <label>Номер телефона*</label> <?=$FORM->ShowInput('Telephone')?> </div>
+       </div>
+     </div>
+   
+    <div class="form-message-column"> <label>Сообщение</label> <?=$FORM->ShowInput('Sms')?> </div>
+   </div>
+ 
+  <div class="form-footer-flex"> 
+    <p class="agreement-text"> Нажимая &laquo;Отправить&raquo;, Вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия «Согласия на обработку персональных данных».</p>
+   <?=$FORM->ShowSubmitButton("Оставить заявку","submit-btn")?> </div>
+ 
+<style>
+.final-form-with-white-bg {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    color: #002056;
+    background-color: #fafafa;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 16px; 
+    color: #002056;
+    height: auto; 
+    background-color: #fff;
+    width: auto; 
+}
+
+.form-header-block {
+    margin-bottom: 30px;
+}
+
+.form-main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.form-body-container {
+    display: flex;
+    gap: 40px;
+}
+
+.form-inputs-column {
+    flex: 1;
+}
+
+.form-message-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.input-field {
+    flex: 1;
+    position: relative;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.form-header-block {
+    margin-bottom: 30px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.form-main-title {
+    font-size: 36px;
+    margin-bottom: 0; 
+    white-space: nowrap; 
+}
+
+.form-subtitle {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 3px;
+    flex: 1; 
+}
+
+.form-footer-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+margin-left: 250px;
+}
+
+.agreement-text {
+    flex: 1;
+    font-size: 14px;
+    color: #002056;
+    line-height: 1.4;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+
+</style>
+ </div>
+ 
